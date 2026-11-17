@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Turnstime, Hand Watch, Watch Shop, E-Commerce, Modern Watches, Online Watch Store">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Turnstime is a modern hand watch shop e-commerce platform offering a wide range of stylish and contemporary watches.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Turnstime - Modern Hand Watch Shop E-Commerce">
+    <meta property="og:description" content="Turnstime is a modern hand watch shop e-commerce platform offering a wide range of stylish and contemporary watches.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/logo/logo.svg">
+    <!-- title -->
+    <title>Blog - Turnstime</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.svg">
+    <!-- default sheet of css -->
+    <link rel="stylesheet" href="assets/css%2c_output.css%2bfont-awesome-lib%2c_icon%2c_all.min.css%2bswiper%2c_swiper-bundle.min.css.pagespeed.cc.IdsX8Hu4Po.css"/>
+    <!-- fonts awsome icon link  -->
+    
+    <!-- animation of css -->
+    <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
+    <!-- Swiper CSS -->
+    
+</head>
+
+<body>
+
+    <!-- 1.1. Header  -->
+    <header class="bg-background-secondaryBg text-primary w-full">
+        <div class="container mx-auto flex justify-between items-center lg:py-10 py-6 px-6" data-aos="fade-down">
+            <nav class="hidden lg:flex space-x-8">
+                <a class="p linkhover" href="index.html">Home</a>
+                <a class="p linkhover" href="about.html">About</a>
+                <div class="relative dropdown">
+                    <a class="cursor-pointer p pb-3 linkhover" id="pagesDropdown">Pages <i class="fa-solid fa-chevron-down text-xs"></i></a>
+                    <div class="absolute left-0 mt-2 w-48 text-primary bg-background-secondaryBg shadow-lg dropdown-menu py-3 px-2 z-50">
+                        <a class="block p-2 linkhover p" href="product-detail.html">Product Detail</a>
+                        <a class="block p-2 linkhover p" href="contact.html">Contact</a>
+                        <a class="block p-2 linkhover p" href="team.html">Team</a>
+                        <a class="block p-2 linkhover p active" href="blog.html">Blog</a>
+                        <!-- <a class="block p-2 linkhover p" href="blog-detail.html">Blog Detail</a>
+                        <a class="block p-2 linkhover p" href="testimonial.html">Testimonial</a> -->
+                        <a class="block p-2 linkhover p" href="faq.html">FAQ</a>
+                        <!-- <a class="block p-2 linkhover p" href="comingsoon.html">Coming Soon</a>
+                        <a class="block p-2 linkhover p" href="error.html">404</a> -->
+                    </div>
+                </div>
+                <a class="p linkhover" href="shop.html">Shop</a>
+            </nav>
+            <figure class="flex items-center">
+                <a href="index.html">
+                    <img class="md:w-48 w-36" src="assets/images/logo/logo.svg" alt="logo">
+                </a>
+            </figure>
+            <div class="flex gap-5">
+                <div class="flex items-center gap-5">
+                    <div class="md:block hidden">
+                        <i id="searchIcon" class="fas fa-search text-white cursor-pointer text-2xl linkhover"></i>
+                    </div>
+                    <div class="md:block hidden">
+                        <i class="fa-regular fa-heart text-white cursor-pointer text-2xl linkhover "></i>
+                    </div>
+                    <i class="fa-solid fa-user text-white cursor-pointer text-2xl linkhover"></i>
+                    <!-- cart button -->
+                    <div class="relative cursor-pointer group" id="cartButton">
+                        <i class="fa-solid fa-bag-shopping text-white cursor-pointer text-2xl group-hover:linkhover"></i>
+                        <span id="cart-count" class="absolute -bottom-2 left-[15%] bg-secondary text-primary rounded-full text-[10px] w-4 h-4 flex items-center justify-center">0</span>
+                    </div>
+                </div>
+                <div class="lg:hidden flex">
+                    <i id="asideToggle" class="fas fa-bars text-white cursor-pointer text-2xl linkhover"></i>
+                </div>
+            </div>
+        </div>
+        <aside class="lg:hidden fixed inset-0 bg-background-primaryBg text-white transform translate-x-full transition-transform duration-300 overflow-y-scroll aside-menu z-50" id="asideMenu">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <a href="index.html">
+                        <figure>
+                            <img src="assets/images/logo/logo.svg" class="w-32 pt-3 pb-7" alt="logo">
+                        </figure>
+                    </a>
+                    <button id="asideCloseButton" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-3xl text-white linkhover"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-4">
+                    <a class="p linkhover" href="index.html">Home</a>
+                    <a class="p linkhover" href="about.html">About</a>
+                    <a class="p linkhover" href="shop.html">Shop</a>
+                    <div class="relative aside-dropdown">
+                        <a class="cursor-pointer p linkhover" id="asidePagesDropdown">Pages <i class="fa-solid fa-chevron-down text-xs"></i></a>
+                        <div class="left-0 mt-2 w-48 text-primary rounded-lg shadow-lg dropdown-menu bg-transparent">
+                            <a class="block py-2 linkhover p" href="product-detail.html">Prodcut Detail</a>
+                            <a class="block py-2 linkhover p" href="contact.html">Contact</a>
+                            <a class="block py-2 linkhover p" href="team.html">Team</a>
+                            <a class="block py-2 linkhover p active" href="blog.html">Blog</a>
+                            <!-- <a class="block py-2 linkhover p" href="blog-detail.html">Blog Detail</a>
+                            <a class="block py-2 linkhover p" href="testimonial.html">Testimonial</a> -->
+                            <a class="block py-2 linkhover p" href="faq.html">FAQ</a>
+                            <!-- <a class="block py-2 linkhover p" href="comingsoon.html">Coming Soon</a>
+                            <a class="block py-2 linkhover p" href="error.html">404</a> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+        <!-- cart menu -->
+        <div id="cart" class="fixed top-0 right-0 pt-2 md:px-10 px-3 h-full bg-background-primaryBg text-white side-menu transform translate-x-full transition-transform duration-300 overflow-y-scroll z-50">
+            <div class="p-4">
+                <div class="flex justify-between gap-6 border-b border-borderColor-border2 border-solid pb-6 mb-7">
+                    <h3>My Cart</h3>
+                    <button id="cartCloseButton" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl text-white linkhover"></i>
+                    </button>
+                </div>
+                <!-- cart list -->
+                <div class="flex flex-col gap-7 mb-8">
+                    <!-- cart item -->
+                    <div class="cart-item flex gap-5 items-center border-b border-solid border-borderColor-border2 md:pb-9 pb-4">
+                        <figure class="w-28 h-28 flex justify-center items-center">
+                            <img class="w-16" src="assets/images/cart/xcart_img1.webp.pagespeed.ic.iWZExCmEm8.webp" alt="cart_img1">
+                        </figure>
+                        <div class="flex flex-col gap-3">
+                            <h4>Midnight Pulse</h4>
+                            <h5>$99.00</h5>
+                            <div class="flex items-center gap-1">
+                                <button class="decrease h-7 w-7 my-2 border-0 border-r border-solid border-borderColor-border2 flex justify-center items-center linkhover" disabled>
+                                    <i class="fa-solid fa-minus text-xs"></i>
+                                </button>
+                                <h5 class="counter h-7 w-7 flex justify-center items-center">0</h5>
+                                <button class="increase h-7 w-7 my-2 border-0 border-l border-solid border-borderColor-border2 flex justify-center items-center linkhover">
+                                    <i class="fa-solid fa-plus text-xs"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="linkhover ml-2">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <!-- Additional cart items go here -->
+                </div>
+                <!-- checkout -->
+                <div class="flex flex-col gap-5 text-primary">
+                    <div class="flex justify-between">
+                        <h4>Sub-Total:</h4>
+                        <h5>$319.00</h5>
+                    </div>
+                    <div class="flex justify-between">
+                        <h4>GST (20%):</h4>
+                        <h5>$61.00</h5>
+                    </div>
+                    <div class="flex justify-between">
+                        <h4>Total:</h4>
+                        <h5>$380.00</h5>
+                    </div>
+                    <div class="flex justify-between gap-2 flex-wrap mt-5">
+                        <button class="hover1">View Cart</button>
+                        <button class="hover2">Check out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- search overlay -->
+        <div id="searchOverlay" class="fixed inset-0 bg-background-blurBg items-center justify-center search-overlay z-50 backdrop-blur-sm">
+            <button id="searchCloseButton" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-3xl text-white linkhover"></i>
+            </button>
+            <div class="p-4 rounded-lg w-3/4 lg:w-2/3 relative">
+                <form class="flex">
+                    <input class="w-full p-4 rounded-l-xl text-white bg-background-blurBg border border-solid border-secondary" placeholder="Search..." type="text" required name="search"/>
+                    <button class="bg-secondary hover:bg-black text-primary hover:text-secondary p-4 rounded-r-lg transition-all border border-solid border-secondary">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- End of 1.1. Header  -->
+    <!-- 2.1. Subpage_Hero  -->
+    <section class="bg-background-primaryBg lg:py-100 md:py-70 py-50">
+        <div class="container">
+            <div class="flex justify-center items-center text-center flex-col gap-3 text-primary">
+                <h2 class="xl:w-3/5 lg:w-3/4 md:w-2/3">Our Latest News</h2>
+                <p class="xl:w-3/5 lg:w-4/5 md:w-5/6 md:px-0 px-3">Lorem ipsum dolor sit amet consectetur. Quisque
+                    tempor massa
+                    enim enim tincidunt cursus non scelerisque phasellus. Sed ultricies quis massa dolor sed magna.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of 2.1. Subpage_Hero  -->
+    <!-- 1.12. Blog  -->
+    <section>
+        <div class="container">
+            <div class="flex md:flex-row flex-col flex-wrap md:gap-y-8 gap-y-4">
+                <div class="md:w-1/3 w-full px-2">
+                    <div class="flex flex-col h-full">
+                        <figure>
+                            <img src="assets/images/blog/blog_Img1.webp" alt="blog_Img1" class="w-full">
+                        </figure>
+                        <div class="flex flex-col lg:gap-4 gap-2 lg:mt-5 mt-3 flex-grow-1 h-full">
+                            <p class="text-primary">Posted on June 18, 2015 &nbsp;/ &nbsp;<i class="fa-regular fa-message text-sm"></i> 2
+                            </p>
+                            <a href="blog-detail.html" class="text-primary">
+                                <h4 class="hover:text-secondary transition-all">
+                                    Lorem ipsum dolor sit amet.
+                                </h4>
+                            </a>
+                            <div>
+                                <a href="blog-detail.html" class="text-primary underline hover:text-secondary transition-all">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 w-full px-2">
+                    <div class="flex flex-col h-full">
+                        <figure>
+                            <img src="assets/images/blog/blog_Img2.webp" alt="blog_Img1" class="w-full">
+                        </figure>
+                        <div class="flex flex-col lg:gap-4 gap-2 lg:mt-5 mt-3 flex-grow-1 h-full">
+                            <p class="text-primary">Posted on June 18, 2015 &nbsp;/ &nbsp;<i class="fa-regular fa-message text-sm"></i> 2
+                            </p>
+                            <a href="blog-detail.html" class="text-primary">
+                                <h4 class="hover:text-secondary transition-all">Lorem ipsum dolor sit amet.
+                                </h4>
+                            </a>
+                            <div>
+                                <a href="blog-detail.html" class="text-primary underline hover:text-secondary transition-all">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 w-full px-2">
+                    <div class="flex flex-col h-full">
+                        <figure>
+                            <img src="assets/images/blog/blog_Img3.webp" alt="blog_Img1" class="w-full">
+                        </figure>
+                        <div class="flex flex-col lg:gap-4 gap-2 lg:mt-5 mt-3 flex-grow-1 h-full">
+                            <p class="text-primary">Posted on June 18, 2015 &nbsp;/ &nbsp;<i class="fa-regular fa-message text-sm"></i> 2
+                            </p>
+                            <a href="blog-detail.html" class="text-primary">
+                                <h4 class="hover:text-secondary transition-all"> Lorem ipsum dolor sit amet.
+                                </h4>
+                            </a>
+                            <div>
+                                <a href="blog-detail.html" class="text-primary underline hover:text-secondary transition-all">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 w-full px-2">
+                    <div class="flex flex-col h-full">
+                        <figure>
+                            <img src="assets/images/blog/blog_Img4.webp" alt="blog_Img1" class="w-full">
+                        </figure>
+                        <div class="flex flex-col lg:gap-4 gap-2 lg:mt-5 mt-3 flex-grow-1 h-full">
+                            <p class="text-primary">Posted on June 18, 2015 &nbsp;/ &nbsp;<i class="fa-regular fa-message text-sm"></i> 2
+                            </p>
+                            <a href="blog-detail.html" class="text-primary">
+                                <h4 class="hover:text-secondary transition-all"> Lorem ipsum dolor sit amet.
+                                </h4>
+                            </a>
+                            <div>
+                                <a href="blog-detail.html" class="text-primary underline hover:text-secondary transition-all">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 w-full px-2">
+                    <div class="flex flex-col h-full">
+                        <figure>
+                            <img src="assets/images/blog/blog_Img5.webp" alt="blog_Img1" class="w-full">
+                        </figure>
+                        <div class="flex flex-col lg:gap-4 gap-2 lg:mt-5 mt-3 flex-grow-1 h-full">
+                            <p class="text-primary">Posted on June 18, 2015 &nbsp;/ &nbsp;<i class="fa-regular fa-message text-sm"></i> 2
+                            </p>
+                            <a href="blog-detail.html" class="text-primary">
+                                <h4 class="hover:text-secondary transition-all"> Lorem ipsum dolor sit amet.
+                                </h4>
+                            </a>
+                            <div>
+                                <a href="blog-detail.html" class="text-primary underline hover:text-secondary transition-all">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3 w-full px-2">
+                    <div class="flex flex-col h-full">
+                        <figure>
+                            <img src="assets/images/blog/blog_Img6.webp" alt="blog_Img1" class="w-full">
+                        </figure>
+                        <div class="flex flex-col lg:gap-4 gap-2 lg:mt-5 mt-3 flex-grow-1 h-full">
+                            <p class="text-primary">Posted on June 18, 2015 &nbsp;/ &nbsp;<i class="fa-regular fa-message text-sm"></i> 2
+                            </p>
+                            <a href="blog-detail.html" class="text-primary">
+                                <h4 class="hover:text-secondary transition-all"> Lorem ipsum dolor sit amet.
+                                </h4>
+                            </a>
+                            <div>
+                                <a href="blog-detail.html" class="text-primary underline hover:text-secondary transition-all">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.12. Blog  -->
+    <!-- 1.13. Footer  -->
+    <footer class="lg:pt-100 md:pt-70 pt-50 bg-background-dimestBg lg:mt-[100px] md:mt-[70px] mt-[50px]">
+        <div class="container">
+            <div class="flex justify-between lg:gap-5 gap-4 lg:pb-11 pb-6 md:flex-nowrap flex-wrap">
+                <div class="flex flex-col lg:gap-6 gap-4 xl:max-w-[25%]">
+                    <h4 class="text-primary">Discover</h4>
+                    <ul class="flex flex-col text-primary lg:gap-4 gap-3">
+                        <li><a href="#">
+                                <p class="hover:text-secondary">About Us</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Blog</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Careers</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Senior Connect</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col lg:gap-6 gap-4 xl:max-w-[25%]">
+                    <h4 class="text-primary">Support</h4>
+                    <ul class="flex flex-col text-primary lg:gap-4 gap-3">
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Help</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Watch FAQs</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Warranty & Repair</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Check Order Status</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Contact Us</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col lg:gap-6 gap-4 xl:max-w-[25%]">
+                    <h4 class="text-primary">Information</h4>
+                    <ul class="flex flex-col text-primary lg:gap-4 gap-3">
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Help</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Watch FAQs</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Warranty & Repair</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Check Order Status</p>
+                            </a></li>
+                        <li><a href="#">
+                                <p class="hover:text-secondary">Contact Us</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col lg:gap-6 gap-4 xl:max-w-[25%] md:max-w-[30%]">
+                    <h4 class="text-primary">Subscribe Our Newsletter</h4>
+                    <p class="text-primary">Lorem ipsum dolor sit amet consectetur. Urna egestas id lorem viverra
+                        facilisis.</p>
+                    <form class="flex w-full justify-between border-b border-solid border-white">
+                        <input type="text" name="footerEmail" placeholder="Enter your email" class="bg-transparent lg:pb-5 pb-3 text-primary placeholder:text-primary w-full" required>
+                        <button type="submit" class="pb-2">
+                            <i class="fa-solid fa-paper-plane text-primary hover:text-secondary"></i>
+                        </button>
+                    </form>
+                    <div id="footerModal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50 px-3 w-full h-full p-6">
+                        <div class="bg-background-secondaryBg rounded-lg overflow-hidden shadow-lg py-6 h-fit w-fit">
+                            <img src="assets/images/icons/Confirmation_1.gif.pagespeed.ce.0mZcCCWbp1.gif" alt="submitIcon" class="mx-auto lg:w-20 w-16 mt-4">
+                            <div class="flex flex-col gap-3 items-center text-center mt-4 text-white">
+                                <h2 class="text-lg font-semibold">Response Submitted</h2>
+                                <h4 class="text-sm mt-2 lg:px-5 px-4">Your details have been successfully submitted.
+                                    Thanks!
+                                </h4>
+                            </div>
+                            <button id="closeFooterModal" class="hover1 mt-8 mx-auto mb-4">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="flex md:justify-between justify-center items-center lg:py-11 py-7 md:flex-nowrap flex-wrap gap-5">
+                <p class="text-primary md:text-start text-center">Copyright © 2026. Mizaan-All Rights Reserved.</p>
+                <a href="index.html">
+                    <figure>
+                        <img src="assets/images/logo/logo.svg" alt="logo" class="lg:w-48 w-32">
+                    </figure>
+                </a>
+                <div class="flex gap-2">
+                    <a href="#">
+                        <figure>
+                            <img src="assets/images/icons/Visa.svg" alt="Visa" class="lg:w-9 w-7 lg:h-7 h-5">
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="assets/images/icons/Discover.svg" alt="Discover" class="lg:w-9 w-7 lg:h-7 h-5">
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="assets/images/icons/Mastercard.svg" alt="Mastercard" class="lg:w-9 w-7 lg:h-7 h-5">
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="assets/images/icons/Bitpay.svg" alt="Bitpay" class="lg:w-9 w-7 lg:h-7 h-5">
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="assets/images/icons/Stripe.svg" alt="Stripe" class="lg:w-9 w-7 lg:h-7 h-5">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of 1.13. Footer  -->
+
+    <!-- main javascript -->
+    <script src="assets/js/custom.js.pagespeed.ce.cPObN5IyYE.js"></script>
+    <!-- aos animation of js -->
+    <!-- <script src="assets/js/aos.js"></script> -->
+    <!-- Swiper JS -->
+    <script src="assets/swiper/swiper-bundle.min.js.pagespeed.ce.FQyAoFS2hx.js"></script>
+    <script></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"afef85246d6f4aa98a1a0a5c34b94c75","r":1,"spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a54d34999b21d05f',t:'MTc5MzcyODA2MA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='../cdn-cgi/challenge-platform/h/g/scripts/jsd/5c2e6b612edd/main401c.js?ray=a54d34999b21d05f',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+
+
+</html>
